@@ -1,11 +1,17 @@
+
+# Function to calculate simple interest
 def simple_interest(p, r, t):
-    si = (p * r * t) / 100
-    return si
+    return (p * r * t) / 100
 
-p = float(input("Enter principal amount: "))
-r = float(input("Enter rate of interest: "))
-t = float(input("Enter time in years: "))
+# Main program
+if __name__ == "__main__":
+    principal = 80000
+    rate = 2
+    time = 4
 
-result = simple_interest(p, r, t)
+    interest = simple_interest(principal, rate, time)
 
-print("Simple Interest =", result)
+    print("Principal Amount:", principal)
+    print("Rate of Interest:", rate, "%")
+    print("Time:", time, "years")
+    print("Simple Interest:", interest)
